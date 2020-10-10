@@ -133,3 +133,12 @@ footer{
 }
 
 
+/* media query */
+
+@media(max-width : 800px){
+    .nave-menu{
+        display: none;
+    }
+}
+
+
