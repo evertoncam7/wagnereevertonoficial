@@ -239,7 +239,15 @@ footer h3{
 
 .bx-playlist{
     width: 100%;
-    padding: 20px;
+    
+}
+
+.bx-playlist > header{
+    width: 100%;
+    padding: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bx-playlist h2{
@@ -253,6 +261,7 @@ footer h3{
     color: #222;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
 }
 
 .btn-playlist:hover{
