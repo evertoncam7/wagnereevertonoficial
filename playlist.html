@@ -11,6 +11,7 @@
             margin:0px;
             padding: 0px;
             box-sizing: border-box;
+            list-style: none;
         }
         .container-playlist{
             position: absolute;
@@ -56,13 +57,23 @@
         }
 
         .list ul li{
+            position: relative;
             width: 100%;
             font-family: 'Open Sans', sans-serif;
             padding: 20px 0px;
             border-bottom: 1px solid #fff;
+            display: flex;
+            align-items: center;
+            
         }
 
-
+        .icon-2{
+            position: absolute;
+            height: 100%;
+            right: 0px;
+            display: flex;
+            align-items: center;
+        }
 
     </style>
 </head>
@@ -73,16 +84,16 @@
         </header>
         <section class="list">
             <ul>
-                <li class="btn-list" data-url="assets/audios/criei-coragem.mp3" >Criei Coragem</li>
-                <li class="btn-list" data-url="assets/audios/cai-fora.mp3" >Cai fora</li>
-                <li class="btn-list" data-url="assets/audios/com-voce.mp3" >Com Você</li>
-                <li class="btn-list" data-url="assets/audios/fim-de-semana.mp3" >Fim de semana</li>
-                <li class="btn-list" data-url="assets/audios/jogo-do-amor.mp3" >Jogo do amor</li>
-                <li class="btn-list" data-url="assets/audios/mais-que-loucura.mp3" >Mais que loucura</li>
-                <li class="btn-list" data-url="assets/audios/nada-serio.mp3" >Nada sério</li>
-                <li class="btn-list" data-url="assets/audios/saudade-doi.mp3" >Saudade dói</li>
-                <li class="btn-list" data-url="assets/audios/sei-que-sou-culpado.mp3" >Sei que sou culpado</li>
-                <li class="btn-list" data-url="assets/audios/vem-pra-ca.mp3" >Vem pra cá</li>
+                <li class="btn-list" data-url="assets/audios/criei-coragem.mp3" >Criei Coragem <span class="icon-2"></span></li>
+                <li class="btn-list" data-url="assets/audios/cai-fora.mp3" >Cai fora <span class="icon-2"></span></li>
+                <li class="btn-list" data-url="assets/audios/com-voce.mp3" >Com Você <span class="icon-2"></span></li>
+                <li class="btn-list" data-url="assets/audios/fim-de-semana.mp3" >Fim de semana <span class="icon-2"></span></li>
+                <li class="btn-list" data-url="assets/audios/jogo-do-amor.mp3" >Jogo do amor <span class="icon-2"></span></li>
+                <li class="btn-list" data-url="assets/audios/mais-que-loucura.mp3" >Mais que loucura <span class="icon-2"></span></li>
+                <li class="btn-list" data-url="assets/audios/nada-serio.mp3" >Nada sério <span class="icon-2"></span></li>
+                <li class="btn-list" data-url="assets/audios/saudade-doi.mp3" >Saudade dói <span class="icon-2"></span></li>
+                <li class="btn-list" data-url="assets/audios/sei-que-sou-culpado.mp3" >Sei que sou culpado <span class="icon-2"></span></li>
+                <li class="btn-list" data-url="assets/audios/vem-pra-ca.mp3" >Vem pra cá <span class="icon-2"></span></li>
             </ul>
         </section>
 
@@ -106,6 +117,9 @@
 
                 $(".btn-list").removeClass("icon-play");
                 $(this).addClass("icon-play");
+
+                $(".icon-2").removeClass("icon-graph-bar");
+                $(this).find(".icon-2").addClass("icon-graph-bar");
 
                 const el = $(this);
                 const data = el.data();
