@@ -233,3 +233,24 @@ footer h3{
 .bx-img img{
     width: 100%;
 }
+
+
+/* playlist */
+
+.bx-playlist{
+    width: 100%;
+    padding: 10px;
+}
+
+.bx-playlist h2{
+    color: #fff;
+    font-size: 1em;
+}
+
+.btn-playlist{
+    padding: 8px 20px;
+    background: #fff;
+    color: #222;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
