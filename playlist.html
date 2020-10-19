@@ -100,18 +100,16 @@
         <div class="player" >
             <audio id="id-player" controls>
                 <source src="" type="audio/ogg">
-                
             </audio>
         </div>
     </div>
     
-
     <script src="assets/js/jquery.min.js"></script>
     <script>
 
         const audio = document.getElementById("id-player");
+
         $(function(){
-            
             
             $(".btn-list").on("click", function(){
 
@@ -124,17 +122,14 @@
                 const el = $(this);
                 const data = el.data();
                 
-
                 const player = $("#id-player");
                 player.attr("src", data.url);
                 audio.play();
                
-
             });
 
-
-
         });
+        
     </script>
 </body>
 </html>
