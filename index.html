@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <title>Wagner e Everton</title>
     <style>
+
+        *{
+            user-select: none;
+        }
         .background-index{
             background-image: url("assets/images/fundo-01.jpg");
             background-size: cover;
@@ -100,7 +104,11 @@
             }
             
             .calendario-shows{
-                height: 170px;
+              
+            }
+
+            .bx-calendario{
+                display: none;
             }
 
             .calendario{
@@ -268,7 +276,7 @@
         <header class="calendario">
             <h1>CALENDÁRIO</h1><span class="icon-calendar"></span>
         </header>
-        <article class="cols">
+        <article class="cols bx-calendario">
             <ul>
                 <li>13/10/2020 -    Programa A verdade nua e crua.</li>
                 <li>00/00/0000</li>
@@ -297,9 +305,7 @@
         </article>
         
     </section>
-    <div class="footer-calendario">
-        Mais datas...
-    </div>
+   
     <section class="lives">
         <header>
             <h1>LIVES E ENTREVISTAS</h1>
@@ -432,6 +438,17 @@
     <footer class="footer-site">
 
     </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        
+
+        $(".calendario").on('click', function(){
+            $(".bx-calendario").slideToggle();
+        })
+
+
+
+    </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180299571-1"></script>
