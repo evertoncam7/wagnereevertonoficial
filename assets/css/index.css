@@ -209,6 +209,7 @@ footer h3{
     flex-basis: 100%;
     margin: 5px;
     padding: 0px 130px;
+
 }
 
 .bx-mp3 a{
@@ -223,15 +224,32 @@ footer h3{
 
 
 .bx-img{
-    position: absolute;
-    width: 40%;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    right: 50px;
-    bottom: -5px;
+    
 }
 
-.bx-img img{
+.bx-img-2{
+    position: absolute;
+    top: 0px;
     width: 100%;
+}
+
+.av{
+    position: relative;
+    top: 50px;
+    left: 60%;
+    width: 500px;
+}
+
+.ob{
+    position: absolute;
+    top: 170px;
+    left: 22%;
+    width: 300px;
 }
 
 
