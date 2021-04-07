@@ -13,6 +13,7 @@
 
         *{
             user-select: none;
+            -webkit-touch-callout: none;
         }
         .background-index{
             background-image: url("assets/images/fundo-01.jpg");
@@ -252,7 +253,7 @@
         </header>
         <div class="bx-img">
             <div class="bx-img-2">
-                <img class='av' src="assets/images/avatar-72.png" alt="">
+                <img id="img-avatar" class='av' src="assets/images/im-av-01.png" alt="">
                 <img class='ob' src="assets/images/orgulho_bobo.png" alt="">
             </div>
         </div>
@@ -443,7 +444,18 @@
         
 
         $(".calendario").on('click', function(){
+
+           
+            const vvv = $(".bx-calendario").is(':visible');
             $(".bx-calendario").slideToggle();
+            if(!vvv){
+                $("#img-avatar").attr("src", "assets/images/im-av-02.png");
+                console.log('Aberto');
+            }else{
+                $("#img-avatar").attr("src", "assets/images/im-av-01.png");
+                console.log('Fechado');
+            }
+          
         })
 
 
