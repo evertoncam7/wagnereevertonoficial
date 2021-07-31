@@ -359,24 +359,3 @@
 .icon-search-1:before {
   content: "\e009";
 }
-.icon-calendar:before {
-  content: "\e00a";
-}
-.icon-calendar-1:before {
-  content: "\e00b";
-}
-.icon-calendar-check-o:before {
-  content: "\e00c";
-}
-.icon-calendar-minus-o:before {
-  content: "\e00d";
-}
-.icon-calendar-plus-o:before {
-  content: "\e00e";
-}
-.icon-calendar-times-o:before {
-  content: "\e00f";
-}
-.icon-calendar-o:before {
-  content: "\e010";
-}
