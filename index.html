@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/icons/styles.css">
+    <link rel="stylesheet" href="assets/icons/icons/styles.css">
     <title>Wagner e Everton</title>
 
     <style>
@@ -23,6 +23,7 @@
 
         .section{
             background-attachment: fixed;
+            position: relative;
         }
 
         .p1{
@@ -157,13 +158,76 @@
             justify-content: center;
             padding: 40px 0px 20px 0px;        
         }
+        
+        .pad-10{
+            padding: 10px;
+        }
 
+        .header_mobile{
+            position: fixed;
+            top: -60px;
+            width: 100%;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.5);
+            display: none;
+            z-index: 100;
+            transition: 0.5s all;
+            /* display: flex; */
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.2);
+        }
+
+        .fundo01{
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            z-index: 20;
+        }
+
+        .list-agenda{
+            position: relative;
+            z-index: 30;
+        }
+
+        .col-10{
+            width: 10%;
+        }
+
+
+        /* Sections */
+
+        .section-primary{
+            /* width: 400px;
+            height: 300px;
+            background: chartreuse; */
+        }
+
+        .btn-whatsapp{
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            z-index: 1000;
+        }
+
+        .btn-whatsapp img{
+            width: 60px;
+        }
+
+        
 
 
         /* ------------------------------------------------------------------------------------------------------- */
 
 
         @media(max-width:400px){
+
+            .header_mobile{
+                display: flex;
+            }
 
 
             .p1{
@@ -229,7 +293,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content:left;
-                padding: 10px 0px;
+                padding: 10px 25px;
             }
 
             .card-platform{
@@ -253,12 +317,18 @@
 <body>
 
     <div class="container">
+
+        <div id="id-header" class="header_mobile">
+            <span class="col-10"></span>
+            <span class="">Wagner e Everton</span>
+            <span class="icon-bars col-10"></span>
+        </div>
         
         <section class="section p1">
 
         </section>
 
-        <div class="separador">Plataformas</div>
+        <div id="s-01" class="separador">Plataformas</div>
         <section class="section">
             <span class="bx-platforms">
                 <div class="card-platform"><img src="assets/platforms/aplemusic.png" alt=""></div>
@@ -269,7 +339,7 @@
         </section>
 
         <div class="separador">Notícias</div>
-        <section class="section">
+        <section class="section section-primary">
             <img src="assets/images/live-festival.jpg" alt="">
             <div class="section-desc">
                 <h3>Roque in Rosa Live Festival</h3>
@@ -278,13 +348,39 @@
         </section>
 
         <div class="separador">Agênda</div>
-        <section class="section">
+        <section class="section pad-10">
+
+            <img class="fundo01" src="assets/images/svg/fundo01.svg" alt="">
+
+            <ul class="list-agenda">
+                <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
+                <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
+                <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
+                <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
+                <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
+            </ul>
+
+            
             
         </section>
 
         <div class="separador">Fotos</div>
-        <section class="section">
-            
+        <section class="section pad-10">
+            <ul class="list-agenda">
+                <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
+                <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
+                <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
+                <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
+                <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
+            </ul>
+        </section>
+
+        <div class="separador">Causas Sociais</div>
+        <section class="section pad-10">
+            <ul class="list-agenda">
+                <li><span class="icon-heart"> CasaCaiHc de Jaú</span></li>
+                <li><span class="icon-heart"> Apar de Ibitinga</span></li>
+            </ul>
         </section>
 
         <section class="section sociais">
@@ -310,11 +406,45 @@
 
         </section>
 
+        
 
 
     </div>
 
+    <span class="btn-whatsapp">
+        <img src="assets/images/btn-whatsapp.png" alt="">
+        <p>Contato</p>
+    </span>
 
+    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
+<script>
+
+    const s1 = document.getElementById("s-01");
+
+    const options = {
+        top:0,
+        px:"0px"
+    };
+
+    document.addEventListener("scroll", function(e){
+    
+
+        if(options.top < 390){
+            options.px = "-60px";
+            // console.log(options.px)
+            $("#id-header").css({display:"flex", top:options.px});
+        }else{
+            options.px = "0px";
+            // console.log(options.px)
+            $("#id-header").css({display:"flex", top:options.px});
+        }
+
+        options.top = window.scrollY;
+
+    });
+
+
+</script>
 </html>
