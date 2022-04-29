@@ -16,9 +16,9 @@
             font-family: 'Montserrat', sans-serif;
         }
 
-    
         .container{        
             width: 100%;
+            overflow: hidden;
         }
 
         .section{
@@ -27,6 +27,7 @@
         }
 
         .p1{
+            position: relative;
             width: 100%;
             height: 370px;
             background-image: url("assets/images/CARD01.png");
@@ -217,6 +218,27 @@
             width: 60px;
         }
 
+        ul{
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .list-link li{
+            margin-bottom: 7px;
+        }
+
+        .section article{
+            margin-bottom: 20px;
+        }
+
+        .section article header{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+            padding: 10px 0px;
+        }
         
 
 
@@ -258,7 +280,7 @@
             }
 
             .section{
-                padding-bottom: 20px;
+               
             }
 
             .section img{
@@ -311,77 +333,149 @@
 
         }
 
+        .card-shows{
+            position: absolute;
+            right: 0px;
+            bottom: 20px;
+            width: 250px;
+            font-size: 0.9em;
+            
+            font-weight: bold;
+            
+            overflow: hidden;
+        }
+
+        .card-shows ul li{
+            position: relative;
+            right: -40px;
+            padding: 5px 0px;
+            background: rgba(255, 255, 255, 0.9);
+            animation-name: sss;
+            animation-duration: 0.5s;
+            animation-delay: 1s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+            padding: 10px;
+        }
+
+        @keyframes sss{
+            0%{
+                right: -40px;
+            }
+            100%{
+                opacity: 1;
+                right: 0px;
+            }
+        }
+
+      
+
         
     </style>
 </head>
 <body>
 
-    <div class="container">
+    <header id="id-header" class="header_mobile">
+        <span class="col-10"></span>
+        <span class="">Wagner e Everton</span>
+        <span class="icon-bars col-10"></span>
+    </header>
 
-        <div id="id-header" class="header_mobile">
-            <span class="col-10"></span>
-            <span class="">Wagner e Everton</span>
-            <span class="icon-bars col-10"></span>
-        </div>
-        
+    <main class="container">
+
         <section class="section p1">
-
-        </section>
-
-        <div id="s-01" class="separador">Plataformas</div>
-        <section class="section">
-            <span class="bx-platforms">
-                <div class="card-platform"><img src="assets/platforms/aplemusic.png" alt=""></div>
-                <div class="card-platform"><img src="assets/platforms/deezer.png" alt=""></div>
-                <div class="card-platform"><img src="assets/platforms/soundcloud.png" alt=""></div>
-                <div class="card-platform"><img src="assets/platforms/spotfy.png" alt=""></div>
-            </span>
-        </section>
-
-        <div class="separador">Notícias</div>
-        <section class="section section-primary">
-            <img src="assets/images/live-festival.jpg" alt="">
-            <div class="section-desc">
-                <h3>Roque in Rosa Live Festival</h3>
-                <p>Contamos com o seu voto.</p>
+            
+            <div class="card-shows">
+                <ul>
+                    <li>&#10026; 24/04/2022 - Beneficiênte</li>
+                    <li>&#10026; 25/04/2022 - Casamento</li>
+                    <li>&#10026; 15/05/2022 - Confraternização entre amigos.</li>
+                </ul>
             </div>
+
         </section>
 
-        <div class="separador">Agênda</div>
+
+        <section class="section">
+
+            <article>
+                <header>
+                    <h2>Plataformas</h2>
+                </header>
+
+                <div class="bx-platforms">
+                    <div class="card-platform"><img src="assets/platforms/aplemusic.png" alt=""></div>
+                    <div class="card-platform"><img src="assets/platforms/deezer.png" alt=""></div>
+                    <div class="card-platform"><img src="assets/platforms/soundcloud.png" alt=""></div>
+                    <div class="card-platform"><img src="assets/platforms/spotfy.png" alt=""></div>
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="section section-primary">
+
+            <article>
+                <header>
+                    <h2>Notícia</h2>
+                </header>
+                <img src="assets/images/live-festival.jpg" alt="">
+                <div class="section-desc">
+                    <h3>Roque in Rosa Live Festival</h3>
+                    <p>Contamos com o seu voto.</p>
+                </div>
+            </article>
+
+        </section>
+
         <section class="section pad-10">
 
-            <img class="fundo01" src="assets/images/svg/fundo01.svg" alt="">
+            <article>
 
-            <ul class="list-agenda">
-                <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
-                <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
-                <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
-                <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
-                <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
-            </ul>
+                <header>
+                    <h2>Agênda</h2>
+                </header>
 
+                <ul class="list-agenda">
+                    <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
+                    <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
+                    <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
+                    <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
+                    <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
+                </ul>
+
+            </article>
+
+            <article>
+                <header>
+                    <h2>Fotos</h2>
+                </header>
+
+                <ul class="list-agenda list-link">
+                    <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
+                    <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
+                    <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
+                    <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
+                    <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
+                </ul>
+
+            </article>
+
+            <article>
+                <header>
+                    <h2>Cousas Sociais</h2>
+                </header>
+
+                <ul class="list-agenda list-link">
+                    <li><span class="icon-heart"> CasaCaiHc de Jaú</span></li>
+                    <li><span class="icon-heart"> Apar de Ibitinga</span></li>
+                </ul>
+
+            </article>
             
-            
         </section>
 
-        <div class="separador">Fotos</div>
-        <section class="section pad-10">
-            <ul class="list-agenda">
-                <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
-                <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
-                <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
-                <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
-                <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
-            </ul>
-        </section>
-
-        <div class="separador">Causas Sociais</div>
-        <section class="section pad-10">
-            <ul class="list-agenda">
-                <li><span class="icon-heart"> CasaCaiHc de Jaú</span></li>
-                <li><span class="icon-heart"> Apar de Ibitinga</span></li>
-            </ul>
-        </section>
 
         <section class="section sociais">
             <span class="bx-sociais">
@@ -409,7 +503,7 @@
         
 
 
-    </div>
+    </main>
 
     <span class="btn-whatsapp">
         <img src="assets/images/btn-whatsapp.png" alt="">
@@ -420,6 +514,8 @@
     <script src="assets/js/index.js"></script>
 </body>
 <script>
+
+   
 
     const s1 = document.getElementById("s-01");
 
