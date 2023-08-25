@@ -4,542 +4,587 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/icons/icons/styles.css">
-    <title>Wagner e Everton</title>
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/icons/styles.css">
+    
+    <title>Wagner e Heverton</title>
     <style>
+
         *{
             padding: 0px;
             margin: 0px;
             box-sizing: border-box;
+            list-style: none;
             font-family: 'Montserrat', sans-serif;
-        }
-
-        .container{        
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .section{
-            background-attachment: fixed;
-            position: relative;
-        }
-
-        .p1{
-            position: relative;
-            width: 100%;
-            height: 370px;
-            background-image: url("assets/images/CARD01.png");
-            background-repeat: no-repeat;
-            /* background-position-x: -200px; */
-            background-size: 100%;
-        }
-
-        .sociais{
-            width: 100%;
-            padding: 20px 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .bx-sociais{
-            width: 450px;
-            display: flex;
-            justify-content: center;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-            padding: 10px 0px;
-        }
-
-        a{
-            color:#000;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .bx-sociais-mobile{
-            display: none;
-        }
-
-        .card-social{
-            margin: 0px 8px;
-        }
-
-        .card-social:hover{
-            color: #333;
-            cursor: pointer;
-        }
-
-        .fosize{
-            font-size: 1em;
-        }
-
-        .separador{
-            width: 100%;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-        }
-
-        .p2{
-            width: 100%;
-            background: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
-        }
-
-        .p22{
-            width: 100%;
-            background: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .p3{
-            width: 100%;
-            height: 500px;
-            background: #fff;
-        }
-
-        .cont-p2{
-            width: 1000px;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .p2-aside{
-            width: 100%;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            background-size: c;
-        }
-
-        .p2-aside h1{
-            font-weight: bold;
-            font-size: 1.4em;
-        }
-
-        .p2-article{
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .p2-article img{
-            width: 300px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .space{
-            width: 100%;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .space span{
-            width: 700px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-        }
-
-        .bx-platforms{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 40px 0px 20px 0px;        
-        }
-        
-        .pad-10{
-            padding: 10px;
-        }
-
-        .header_mobile{
-            position: fixed;
-            top: -60px;
-            width: 100%;
-            height: 60px;
-            background: rgba(255, 255, 255, 0.5);
-            display: none;
-            z-index: 100;
-            transition: 0.5s all;
-            /* display: flex; */
-            align-items: center;
-            justify-content: space-between;
-            padding: 10px 10px;
-            font-size: 1.5em;
-            font-weight: bold;
-            box-shadow: 0px 0px 10px  rgba(0, 0, 0, 0.2);
-        }
-
-        .fundo01{
-            position: absolute;
-            left: 0px;
-            bottom: 0px;
-            z-index: 20;
-        }
-
-        .list-agenda{
-            position: relative;
-            z-index: 30;
-        }
-
-        .col-10{
-            width: 10%;
-        }
-
-
-        /* Sections */
-
-        .section-primary{
-            /* width: 400px;
-            height: 300px;
-            background: chartreuse; */
-        }
-
-        .btn-whatsapp{
-            position: fixed;
-            right: 30px;
-            bottom: 30px;
-            z-index: 1000;
-        }
-
-        .btn-whatsapp img{
-            width: 60px;
-        }
-
-        ul{
             list-style: none;
             text-decoration: none;
         }
 
-        .list-link li{
-            margin-bottom: 7px;
-        }
-
-        .section article{
-            margin-bottom: 20px;
-        }
-
-        .section article header{
+        .w-100{
             width: 100%;
+        }
+
+        .h-200{
+            height: 200px;
+        }
+
+        .h-400{
+            height: 400px;
+        }
+
+        .h-600{
+            height: 600px;
+        }
+
+        .h-700{
+            height: 700px;
+        }
+
+        .header-mobile{
+            display: none;
+        }
+
+        .image-fixed{
+            background-image: url("assets/images/capa_02-2.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .haeder-site{
+
+            width: 100%;
+            
+           
+        }
+
+        .header-web{
+            width: 100%;
+            padding: 20px 40px;
             display: flex;
+            justify-content: space-between;
+
+        }
+
+        .fixed{
+            position: fixed;
+            
+        }
+
+        .logo-image{
+            width: 75px;
+            height: 75px;
+        }
+
+        .logo-image img{
+            /* width: 100%; */
+            height: 100%;
+        }
+
+        .rigth-header{
+            display: flex;
+            justify-content: flex-end;
+            
+        }
+
+        .rigth-header ul{
+            display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            font-size: 0.8em;
-            padding: 10px 0px;
-        }
-        
-
-
-        /* ------------------------------------------------------------------------------------------------------- */
-
-
-        @media(max-width:400px){
-
-            .header_mobile{
-                display: flex;
-            }
-
-
-            .p1{
-                width: 100%;
-                height: 400px;
-                background-size: 400%;
-                background-position-x: -400px;
-            }
-
-            .bx-sociais{
-                display: none;
-                width: none;
-                margin-bottom: 20px;
-            }
-
-            .bx-sociais-mobile{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 200px;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-                padding: 10px 0px;
-                margin-bottom: 20px;
-            }
-
-            .sociais{
-                padding: 5px 0px;
-            }
-
-            .section{
-               
-            }
-
-            .section img{
-                width: 100%;
-            }
-
-            .section-desc{
-                padding:10px;
-            }
-
-            .fosize{
-                font-size: 1.1em;
-            }
-
             
-
-            .p2-article img{
-                width: 100px;
-            }
-
-
-            .cont-p2{
-                width: 100%;
-            }
-
-            .space span{
-                width: 75%;
-            }
-
-            .bx-platforms{
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content:left;
-                padding: 10px 25px;
-            }
-
-            .card-platform{
-                width: 50%;
-                height: 70px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .bx-platforms img{
-                width: 100%;
-            }
-
-
         }
 
-        .card-shows{
-            position: absolute;
-            right: 0px;
-            bottom: 20px;
-            width: 250px;
-            font-size: 0.9em;
-            
-            font-weight: bold;
-            
-            overflow: hidden;
+        .rigth-header ul li{
+            margin: 5px;
         }
 
-        .card-shows ul li{
-            position: relative;
-            right: -40px;
-            padding: 5px 0px;
-            background: rgba(255, 255, 255, 0.9);
-            animation-name: sss;
-            animation-duration: 0.5s;
-            animation-delay: 1s;
-            opacity: 0;
-            animation-fill-mode: forwards;
+        .color-font-1{
+            color: #fff;
+        }
+
+        .color-font-1 a{
+            color: #fff;
+        }
+
+        .background-01{
+            background: #111;
+        }
+
+        .background-02{
+            background: #222;
+        }
+
+        .pad-10{
             padding: 10px;
         }
 
-        @keyframes sss{
+        .pad-20{
+            padding: 20px;
+        }
+
+        .title-sec{
+            padding: 10px 0px;
+        }
+
+        .m-b-10{
+            margin-bottom: 10px;
+        }
+
+        .m-b-20{
+            margin-bottom: 20px;
+        }
+
+        .container-sec{
+            width: 70%;
+            margin: auto;
+            
+        }
+
+        .center{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .list-01{
+            
+            margin-bottom: 20px;
+        }
+
+        .container-contato{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .card-contato{
+
+        }
+
+        .box-logo{
+            position: absolute;
+            top: 100px;
+            width: 95%;
+            height: 200px;
+            /* background: red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box-logo img{
+            height: 70%;
+            animation-name: animaLogo;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+        }
+
+        footer{
+            width: 100%;
+            height: 300px;
+            background: #000;
+        }
+
+
+        .lista-horizontal{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+
+        /* EVENTOS */
+
+        .bx-events{
+            width: 100%;
+            /* padding: 10px; */
+            display:flex;
+            flex-wrap: wrap;
+            /* background: rgb(241, 241, 241); */
+        }
+
+        .bx-events article{
+            width: calc(25% - 10px);
+            /* height: 450px; */
+            background: #fff;
+            margin: 5px;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px #00000023;
+            display:flex;
+            flex-wrap: wrap;
+
+        }
+
+        .card-footer{
+            width: 100%;
+            height: 30px;
+            /* background: red; */
+            font-size: 0.7em;
+            padding: 0px 10px;
+            display: flex;
+            align-items: center;
+            color: #999;
+        }
+
+        .bx-events article header{
+
+            width: 100%;
+            height: 160px;
+            padding: 10px;
+            
+        }
+
+        .bx-events article header h1{
+
+            margin-bottom: 5px;
+            
+        }
+
+        .bx-image{
+            width: 100%;
+            height: 180px;
+            
+        }
+
+        .bx-image img{
+            width: 100%;
+        }
+
+        .box-proximo-show{
+            width: 100%;
+            height: 200px;
+            padding-top:80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box-proximo-show article header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+        }
+
+
+        
+
+        
+
+
+
+       
+
+
+        /* Animações */
+
+        @keyframes animaLogo {
             0%{
-                right: -40px;
-            }
-            100%{
+                opacity:0;
+            }100%{
                 opacity: 1;
-                right: 0px;
             }
         }
+
+
+        
+
+        /* RESPONSIVO */
+
+        
 
       
 
-        
     </style>
+    <link rel="stylesheet" href="assets/css/home-responsive.css">
 </head>
 <body>
 
-    <header id="id-header" class="header_mobile">
-        <span class="col-10"></span>
-        <span class="">Wagner e Everton</span>
-        <span class="icon-bars col-10"></span>
-    </header>
+    <div class="container w-100">
 
-    <main class="container">
+        <header class="haeder-site fixed">
 
-        <section class="section p1">
-            
-            <div class="card-shows">
-                <ul>
-                    <li>&#10026; 24/04/2022 - Beneficente em prol do Vitor Hugo.</li>
-                    <li>&#10026; 25/04/2022 - Casamento</li>
-                    <li>&#10026; 15/05/2022 - Confraternização entre amigos.</li>
-                </ul>
+            <div class="header-web">
+
+                <div class="logo-image">
+                    <img src="assets/images/logo-nome-simbolo-branco.png" alt="">
+                </div>
+    
+                <div class="rigth-header color-font-1">
+                    <ul>
+                        <li><a href="agenda/index.html">AGENDA</a></li>
+                        <li><a href="pagecreate.html">PARCEIROS</a></li>
+                        <li><a href="pagecreate.html">BIOGRAFIA</a></li>
+                        <li><a href="pagecreate.html">GALERIA</a></li>
+                        <li><a href="midias.html">MÍDIAS</a></li>
+                        <li><a href="pagecreate.html">CONTATO</a></li>
+                    </ul>
+                </div>
             </div>
 
-        </section>
+            <div class="header-mobile">
+                <div class="logo-image">
+                    <img src="assets/images/logo-nome-simbolo-branco.png" alt="">
+                </div>
+                <div class="icon-bars"></div>
+                <div class="box-nav">
+                    <div class="header-nav-bars">
+                        <span class="icon-times"></span>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="agenda/index.html">AGENDA</a></li>
+                            <li><a href="pagecreate.html">PARCEIROS</a></li>
+                            <li><a href="pagecreate.html">BIOGRAFIA</a></li>
+                            <li><a href="pagecreate.html">GALERIA</a></li>
+                            <li><a href="midias.html">MÍDIAS</a></li>
+                            <li><a href="pagecreate.html">CONTATO</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
 
+        </header>
+        <main>
 
-        <section class="section">
+            <section class="w-100 h-700 image-fixed">
 
-            <article>
-                <header>
-                    <h2>Plataformas</h2>
-                </header>
-
-                <div class="bx-platforms">
-                    <div class="card-platform"><img src="assets/platforms/aplemusic.png" alt=""></div>
-                    <div class="card-platform"><img src="assets/platforms/deezer.png" alt=""></div>
-                    <div class="card-platform"><img src="assets/platforms/soundcloud.png" alt=""></div>
-                    <div class="card-platform"><img src="assets/platforms/spotfy.png" alt=""></div>
+                <div class="box-proximo-show">
+                    <article>
+                        <header>
+                            <h2>Próximo Show</h2>
+                            <h1>08.09</h1>
+                            <h3>Sábado</h3>
+                        </header>
+                    </article>
                 </div>
 
-            </article>
+               
 
-        </section>
+            </section>
 
-        <section class="section section-primary">
+            <section class="w-100 color-font-1 background-01 pad-10">
 
-            <article>
-                <header>
-                    <h2>Notícia</h2>
+                <!-- <div class="box-logo">
+                    <img src="assets/images/logo-composto-branco.png" alt="">
+                </div> -->
+                
+                <header class="w-100 center pad-20">
+                    <h1 class="title-sec">PARCEIROS</h1>
                 </header>
-                <img src="assets/images/live-festival.jpg" alt="">
-                <div class="section-desc">
-                    <h3>Roque in Rosa Live Festival</h3>
-                    <p>Contamos com o seu voto.</p>
+
+                <div class="container-sec center">
+
+                  <ul class="lista-horizontal">
+                    <li>RC ARCONDICIONADOS</li>
+                    <li>AGÊNCIA WISE MIND</li>
+                    <li>BORDADOS SOFIA</li>
+                    <li>COLÍRIO MODAS</li>
+                    <li>VÍDEO SOM</li>
+                  </ul>
+    
                 </div>
-            </article>
 
-        </section>
+            </section>
 
-        <section class="section pad-10">
+            <section class="w-100 color-font-1 background-02 pad-10">
 
-            <article>
-
-                <header>
-                    <h2>Agênda</h2>
+                <header class="w-100 center pad-20">
+                    <h1 class="title-sec">BIOGRAFIA</h1>
                 </header>
 
-                <ul class="list-agenda">
-                    <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
-                    <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
-                    <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
-                    <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
-                    <li><span class="icon-pencil"> 02/05/2021 - Ibitinga Particular</span></li>
-                </ul>
+                <div class="container-sec">
 
-            </article>
+                    <article class="m-b-20">
 
-            <article>
-                <header>
-                    <h2>Fotos</h2>
+                        <header>
+                            <h2>WAGNER</h2>
+                        </header>
+                        <p>Wagner Gavião inicia na música aos 16 anos na cidade de Ibitinga, passou por várias bandas e foi vencedor de alguns festivais na região.</p>
+                        <p>Ele teve antes do Heverton mais 3 duplas que não deram certo onde gravou várias canções que tocam até hoje nas rádios da região.</p>
+                        <p>Antes de formar a dupla com Heverton ele tentou uma carreira solo como Wagner Gavi.</p>
+
+                    </article>
+    
+                    <article class="m-b-20">
+
+                        <header>
+                            <h2>HEVERTON</h2>
+                        </header>
+                        <p>Everton Camargo (nome verdadeiro) iniciou sua jornada como músico na cidade de Ibitinga como guitarrista, violonista e backing vocal de bandas de rock e sertanejo</p>
+                        <p>Tocou em grandes casas de shows muito jovem ainda, com 14 anos de idade já cantava em casas de forró.</p>
+                        <p>Heverton passou a se interessar pela composição criando canções como a "Criei coragem" gravada pela dupla recentemnente.</p>
+    
+                    </article> 
+    
+                    <article class="m-b-20">
+
+                        <header>
+                            <h2>COMO TUDO COMEÇOU</h2>
+                        </header>
+                        <p>A dupla começa no ano de 2018 a convite do Wagner para o Heverton que encarou isso como um desafio novo em sua carreira como músico.</p>
+                        <p>No início foi um pouco complicado pois era o começo de uma crise que o mundo viria a enfrentar por conta da pandemia</p>
+                        <p>A área da música em geral foi uma das mais afetadas obrigando a dupla fazer uma pausa.</p>
+                        <p>Alguns projetos tiveram que ser adiados, mas isso não desanimou a dupla que continuou produzindo mesmo sem fazer shows.</p>
+
+                    </article>
+
+                    <article class="m-b-20">
+
+                        <header>
+                            <h2>CRIEI CORAGEM</h2>
+                        </header>
+                        <p>Criei coragem composta por Heverton foi a primeira música que a dupla gravou em estúdio onde foi o início de toda jornada.</p>
+    
+                    </article> 
+
+                </div>
+
+            </section>
+
+            <section class="w-100 color-font-01 pad-10">
+
+                <header class="w-100 center pad-20">
+                    <h1 class="title-sec">EVENTOS</h1>
                 </header>
 
-                <ul class="list-agenda list-link">
-                    <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
-                    <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
-                    <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
-                    <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
-                    <li><span class="icon-camera-retro"> 02/05/2021 - Ibitinga Particular</span></li>
-                </ul>
+                <div class="bx-events">
+                    <article>
+                        <header>
+                            <h1>1° Expo Bordado de Ibitinga.</h1>
+                            <p>A dupla Wagner e Heverton fez a abertura de 1° Expo Bordados da cidade de Ibitinga, um evento que se extendeu por 10 dias.</p>
+                        </header>
+                        <div class="bx-image">
+                            <a href="pagecreate.html">
+                                <img src="assets/images/1-expo-bordado-2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <span>17/08/2023</span>
+                        </div>
+                    </article>
+                    <article>
+                        <header>
+                            <h1>15º Festa de Nossa Senhora dos Navegantes.</h1>
+                            <p>Wagner e Heverton fez a Inauguração do novo complexo turístico da cidade de Ibitinga localizada no pontal do jacaré.</p>
+                        </header>
+                        <div class="bx-image">
+                            <a href="pagecreate.html">
+                                <img src="assets/images/navegantes-2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <span>17/08/2023</span>
+                        </div>
+                    </article>
+                    <article>
+                        <header>
+                            <h1>47° Feira do bordado de Ibitinga.</h1>
+                            <p>A dupla Wagner e Heverton em uma de suas apresentações mais expressívas contagiou o público que cantaram do início ao fim com a dupla.</p>
+                        </header>
+                        <div class="bx-image">
+                            <a href="pagecreate.html">
+                                <img src="assets/images/feira-do-bordado-2023.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <span>17/08/2023</span>
+                        </div>
+                    </article>
+                    <article>
+                        <header>
+                            <h1>4° Edição da Festa do Amendoim de Borborema.</h1>
+                            <p>A cidade de Borborema realizou a 4° Edição da festa do Amendoim que contou com o show da dupla Wagner e Heverton no almoço do sábado.</p>
+                        </header>
+                        <div class="bx-image">
+                            <a href="pagecreate.html">
+                                <img src="assets/images/festa-amendoim.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <span>17/08/2023</span>
+                        </div>
+                    </article>
+                </div>
 
-            </article>
+            </section>
 
-            <article>
-                <header>
-                    <h2>Cousas Sociais</h2>
+            <section class="w-100 color-font-1 background-01 pad-10">
+                
+                <header class="w-100 center pad-20">
+                    <h1 class="title-sec">CONTATO</h1>
                 </header>
 
-                <ul class="list-agenda list-link">
-                    <li><span class="icon-heart"> CasaCaiHc de Jaú</span></li>
-                    <li><span class="icon-heart"> Apar de Ibitinga</span></li>
-                </ul>
+                <div class="container-sec center">
 
-            </article>
-            
-        </section>
+                    <div class="container-contato w-100 h-200">
+                        <article class="card-contato">
+                            <header>
+                                <h2>VENDA DE SHOWS</h2>
+                            </header>
+                            <p>(24) 90000-0000 Claudinei</p>
+                            <p>(16) 90000-0000</p>
+                            <p>(16) 90000-0000</p>
+                        </article>
+    
+                        <article class="card-contato">
+                            <header>
+                                <h2>EMAIL</h2>
+                            </header>
+                            <p>contato@wagnereheverton.com.br</p>
+                        </article>
+                    </div>
+    
+                </div>
 
+            </section>
 
-        <section class="section sociais">
-            <span class="bx-sociais">
-                <div class="card-social"><span class="icon-facebook-square fosize">FACEBOOK</span></div>
-                <div class="card-social"><span class="icon-instagrem fosize">INSTAGRAM</span></div>
-                <div class="card-social"><span class="icon-youtube-play fosize">YOUTUBE</span></div>
-            </span>
-            <span class="bx-sociais-mobile">
-                <div class="card-social"><span class="icon-facebook-square fosize"></span></div>
-                <div class="card-social"><span class="icon-instagrem fosize"></span></div>
-                <div class="card-social"><span class="icon-youtube-play fosize"></span></div>
-            </span>
-        </section>
+        </main>
+        <footer>
 
-        
+        </footer>
 
-        <div class="space">
-            <span></span>
-        </div>
-
-        <section class="section p3">
-
-        </section>
-
-        
-
-
-    </main>
-
-    <span class="btn-whatsapp">
-        <img src="assets/images/btn-whatsapp.png" alt="">
-        <p>Contato</p>
-    </span>
-
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/index.js"></script>
+    </div>
+    
 </body>
 <script>
 
-   
+const btn_menu = document.querySelector(".icon-bars");
 
-    const s1 = document.getElementById("s-01");
+btn_menu.addEventListener("click", function(){
 
-    const options = {
-        top:0,
-        px:"0px"
-    };
+    console.log("clicou!!");
+    const bx_nav_mobile = document.querySelector(".box-nav");
 
-    document.addEventListener("scroll", function(e){
-    
+    if (bx_nav_mobile.classList.contains('close-menu-mobile')) {
+        bx_nav_mobile.classList.remove("close-menu-mobile");
+    }
 
-        if(options.top < 390){
-            options.px = "-60px";
-            // console.log(options.px)
-            $("#id-header").css({display:"flex", top:options.px});
-        }else{
-            options.px = "0px";
-            // console.log(options.px)
-            $("#id-header").css({display:"flex", top:options.px});
-        }
+    bx_nav_mobile.classList.add("open-menu-mobile");
 
-        options.top = window.scrollY;
+});
 
-    });
+const btn_menu_close = document.querySelector(".icon-times");
+
+btn_menu_close.addEventListener("click", function(){
+
+    console.log("clicou!!");
+    const bx_nav_mobile = document.querySelector(".box-nav");
+
+    if (bx_nav_mobile.classList.contains('open-menu-mobile')) {
+        bx_nav_mobile.classList.remove("open-menu-mobile");
+    }
+
+    bx_nav_mobile.classList.add("close-menu-mobile");
+
+});
+
+
+
+
 
 
 </script>

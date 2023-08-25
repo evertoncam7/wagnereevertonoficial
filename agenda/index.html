@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Agenda</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .page-agenda{
+            width: 100%;
+            /* height: 700px; */
+            background-image: url("../assets/images/fundo-agenda-transformed-blur-10.jpg");
+            background-size: cover;
+            /* filter: blur(10px); */
+            background-attachment: fixed;
+        }
+
+        .display{
+            display:flex;
+        }
+
+        .bx1:nth-child(1){
+            width: 100%;
+            /* height: 100%; */
+            /* background: red; */
+        }
+
+        .bx1:nth-child(2){
+            width: 100%;
+            /* height: 100%; */
+            /* background: green; */
+        }
+
+        .bx-agenda{
+            margin: 50px 10px 10px 50px;
+        }
+
+        .li-agenda{
+            color: #fff;
+            margin-top: 30px;
+            
+        }
+
+        .li1-agenda{
+            font-size: 1.6em;
+            
+        }
+
+        .li2-agenda{
+            
+        }
+
+        .li3-agenda{
+            
+        }
+
+        .li4-agenda{
+            border: 1px solid #fff;
+            border-radius: 3px;
+            display:inline-block;
+            padding: 5px 15px;
+            margin-top: 5px;
+            cursor:pointer;
+        }
+
+        .m-10-left{
+            margin-left: 10px;
+        }
+
+        /* Pop Up */
+
+        .containerReserva{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background: #0000009c;
+            display: none;
+        }
+
+        .bx-agendar{
+            position: relative;
+            top: -450px;
+            left: calc(50% - 350px);
+            width: 700px;
+            height: 400px;
+            background: #fff;
+            /* box-shadow: 0px 0px 10px #00000052; */
+            border-radius: 3px;
+            opacity: 0;
+            display:flex;
+            flex-wrap: wrap;
+        }
+
+        .header-agendar{
+            width: 100%;
+            height: 70px;
+            background: red;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .col50{
+            width: 50%;
+            height: calc(100% - 70px);
+            padding: 10px;
+        }
+
+        .box-sec{
+            margin-top: 10px;
+        }
+
+        .actiivePopUpReservaOpen{
+            animation-name: animaReservaOpen;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        .actiivePopUpReservaClose{
+            animation-name: animaReservaClose;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+        }
+
+        
+
+        @keyframes animaReservaOpen {
+            0%{
+                opacity: 0;
+                top:0px;
+            }100%{
+                opacity: 1;
+                top: 100px;
+            }
+        }
+
+        @keyframes animaReservaClose {
+            0%{
+                opacity: 1;
+                top: 100px;
+            }100%{
+                opacity: 0;
+                top: 0px;
+            }
+        }
+
+        .close{
+            display: none;
+            transition: 1s display;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <section class="page-agenda display">
+
+        <div class="bx1">
+
+        </div>
+        <div class="bx1">
+
+            
+        </div>
+
+    </section>
+
+    <div class="containerReserva">
+
+        <div class="bx-agendar">
+            <div class="header-agendar">
+                <h2>Faça a sua reserva de mesa aqui.</h2>
+            </div>
+            <div class="col50">
+                <div class="box-sec">
+                    <p>Quantas cadeiras você precisa?</p>
+                    <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                    </select>
+                </div>
+                <div class="box-sec">
+                    <p>Tem preferência de local da mesa?</p>
+                    <select name="" id="">
+                        <option value="">Frente do palco?</option>
+                        <option value="">Mais no meio?</option>
+                        <option value="">Lá no fundo?</option>
+                    </select>
+                </div>
+                <div class="box-sec">
+                    <p>No nome de quem vai vazer a reserva?</p>
+                    <input type="text">
+                </div>
+                <div class="box-sec">
+                    <p>Número de telefone de quem vai fazer a reserva.</p>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="col50">
+                <div class="box-sec">
+                    <h4>Você pode compartilhar esta data em seu facebook e marcar 3 amigos e ganhar 25% de desconto na entrada.</h4>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+</body>
+<script src="../assets/js/index.js"></script>
+<script>
+
+    const ag = document.querySelectorAll('.bx1');
+    console.log(ag[1]);
+
+    function c(tag, cl){
+
+        const t = document.createElement(tag);
+        t.setAttribute('class', cl);
+
+        return t;
+
+    }
+
+    const agenda = c('article', 'bx-agenda');
+    ag[1].appendChild(agenda);
+
+    bd_agenda.map(function(v, i){
+        
+        const li = c('div', 'li-agenda');
+
+            const li1 = c('div', 'li1-agenda');
+            li1.innerHTML = v.data;
+            li.appendChild(li1);
+
+            const li2 = c('div', 'li2-agenda');
+            li2.innerHTML = v.local;
+            li.appendChild(li2);
+
+            const li3 = c('div', 'li3-agenda');
+            li3.innerHTML = v.cidade;
+            li.appendChild(li3);
+
+            if (v.contato) {
+                const li4 = c('div', 'li4-agenda');
+                li4.innerHTML = 'Reserva de mesa';
+                li4.addEventListener('click', btn_popUpReservaOpen);
+                li.appendChild(li4);   
+
+                const li5 = c('div', 'li4-agenda m-10-left');
+                li5.innerHTML = 'Compartilhe esta data! :D';
+                li5.addEventListener('click', function(){
+                    location.href = `share.html?id=${v.id}`;
+                });
+                li.appendChild(li5);   
+            }
+
+            
+
+        agenda.appendChild(li);
+
+    });
+
+    const con = document.querySelector('.containerReserva');
+
+    function btn_popUpReservaOpen(){
+        con.style.display = 'block';
+        const bx = document.querySelector('.bx-agendar');
+
+        if (bx.classList.actiivePopUpReservaClose) {
+            bx.classList.remove('actiivePopUpReservaClose');
+        }
+
+        bx.classList.add('actiivePopUpReservaOpen');
+    }
+
+    function btn_popUpReservaClose(){
+        
+        con.style.display = 'none';
+        
+        console.log(con);
+    }
+
+    con.addEventListener('click', function(e){
+
+        if (e.target.classList == 'containerReserva') {
+            btn_popUpReservaClose();
+            console.log(e.target);
+        }
+        
+    });
+
+
+
+</script>
+</html>

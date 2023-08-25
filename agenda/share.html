@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- <meta property="og:url"           content="https://evertoncam7.github.io/wagnereevertonoficial/" /> -->
+    <meta property="og:type"          content="article" />
+    <meta property="og:title"         content="Confira a nossa agênda" />
+    <meta property="og:description"   content="Fala meus queridos amigos e amigas segue a nossa agênda e se for possível compartilhe para mais pessoas ficarem sabendo.. muito obrigado! :D" />
+    <meta property="og:image"         content="https://www.tekimobile.com/wp-content/uploads/2019/04/capa-para-facebook-gatinho.jpg" />
+
+    <script src="../assets/js/index.js"></script>
+    <script>
+
+        const data = bd_agenda.filter(function(v, i){
+            return v.id == location.search.slice(4);
+        });
+
+        // console.log(location.search.slice(4));
+        console.log(data[0]);
+
+        
+        
+
+        // const metaUrl = document.createElement("meta");
+        // metaUrl.setAttribute("property", 'og:url');
+        // metaUrl.setAttribute("content", 'https://www.facebook.com/chopperiaboteco.vip');
+       
+        
+        // const metaTitle = document.createElement("meta");
+        // metaTitle.setAttribute("property", 'og:title');
+        // metaTitle.setAttribute("content", data[0].local);
+
+       
+
+       function metaSocial(property, content){
+
+            const head = document.querySelector('head');
+
+            const metaUrl = document.createElement("meta");
+            metaUrl.setAttribute("property", property);
+            metaUrl.setAttribute("content", content);
+            head.appendChild(metaUrl);
+        
+       }
+
+       metaSocial('og:url', 'https://www.facebook.com/chopperiaboteco.vip');
+       metaSocial('og:type', '');
+       metaSocial('og:title', '');
+       metaSocial('og:description', '');
+       metaSocial('og:image', '');
+
+    // <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+    // <meta property="og:type"          content="website" />
+    // <meta property="og:title"         content="Your Website Title" />
+    // <meta property="og:description"   content="Your description" />
+    // <meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+
+
+    </script>
+
+    <title>Wagner e Heverton</title>
+
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .containerSocial{
+            width: 100%;
+            padding: 50px;
+        }
+
+        .box-image{
+            width: 764px;
+            height: 450px;
+           
+            margin: auto;
+        }
+
+        .bx-image{
+            
+            width: 100%;
+            height: 400px;
+            background: rgb(233, 233, 233);
+            border-radius: 5px;
+            overflow: hidden;
+            
+        }
+
+        .bx-image img{
+            width: 100%;
+        }
+
+        .box-share{
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .promocaoShare{
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+      
+
+    </style>
+
+</head>
+<body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="containerSocial">
+
+        <div class="box-image">
+            <div class="bx-image">
+                <img src="" alt="">
+            </div>
+            <div class="box-share">
+
+                <!-- Your share button code -->
+                <div class="fb-share-button" 
+                data-href="https://www.facebook.com/chopperiaboteco.vip" 
+                data-layout="button"
+                data-size="large"
+                >
+                
+                </div>
+
+            </div>
+        </div>
+
+        <div class="promocaoShare">
+            <h1>Compartilhe em suas redes sociais e ganhe 50% de desconto na entrada!</h1>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
