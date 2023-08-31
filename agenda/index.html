@@ -92,7 +92,7 @@
             top: -450px;
             left: calc(50% - 350px);
             width: 700px;
-            height: 400px;
+            /* height: 400px; */
             background: #fff;
             /* box-shadow: 0px 0px 10px #00000052; */
             border-radius: 3px;
@@ -158,6 +158,45 @@
         .close{
             display: none;
             transition: 1s display;
+        }
+
+
+
+        @media(max-width:700px){
+
+            .bx1:nth-child(1){
+                width: 30%;
+            }
+
+            .bx1:nth-child(2){
+                width: 70%;
+            }
+
+            .li-agenda{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .bx-agendar{
+                width: 90%;
+                /* height: 500px; */
+                left: calc(50% - 45%);
+                border-radius: 5px;
+            }
+
+            .header-agendar{
+                padding: 10px;
+            }
+
+            .box-sec{
+                margin-top: 15px;
+            }
+
+            .box-sec p{
+                margin-bottom: 10px;
+            }
+
         }
 
 

@@ -42,6 +42,10 @@
         display: none;
     }
 
+    .title-sec{
+        font-size: 1em;
+    }
+
     .box-nav ul{
         
         width: 100%;
@@ -80,7 +84,7 @@
     }
 
     .h-700{
-        height: 600px;
+        height: 500px;
     }
 
     .lista-horizontal{
@@ -88,7 +92,9 @@
     }
 
     .image-fixed{
-        background-position-x: -350px;
+        background-size:250% ;
+        background-position-y: 0px;
+        background-position-x: -240px;
     }
 
     .bx-events article{
@@ -164,6 +170,11 @@
             opacity: 0;
         }
     }
+
+
+
+
+    
 
 
 
